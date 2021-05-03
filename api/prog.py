@@ -19,4 +19,6 @@ class handler(BaseHTTPRequestHandler):
     self.send_header('Content-type', 'text/html')
     self.end_headers()
     self.wfile.write(('<img src="' + cats[random.randint(0, (len(cats)-1))] + '"/>').encode())
+    #self.wfile.write("YAGSHEMASH!".encode())
     return
+  
